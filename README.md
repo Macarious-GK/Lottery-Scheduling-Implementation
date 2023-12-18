@@ -29,12 +29,15 @@ This Python script simulates a lottery scheduler using classes and methods. The 
 
 3. **Run Scheduler:**
     Run the scheduler using `Run_scheduler` to get the winning process based on ticket allocation.
+   first we disrupte the tickets among the process then run the scheduler to pick one lucky number.
     ```python
+    S.Ticket_disruption()
     S.Run_scheduler()
     ```
 
-4. **Testing:**
+5. **Testing:**
     Simulate and test the scheduler by running it multiple times.
+   Creating empty list to append all the process in order to count the how many times process run and find the persentage of CPU usage..
     ```python
     L = []
     for i in range(100):
